@@ -1,7 +1,8 @@
+// set up our required Node modules
 const fs = require('fs');
-
 const inquirer = require('inquirer');
 
+// use inquirer to prompt user for multiple inputs
 inquirer
 	.prompt([
 		{
@@ -34,6 +35,7 @@ inquirer
 			type: 'input',
 			name: 'install',
 			message: 'What command is needed to install dependencies?',
+			default: 'npm i',
 		},
 		{
 			type: 'input',
