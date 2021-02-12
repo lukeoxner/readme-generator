@@ -10,7 +10,7 @@ This application was built using Javascript and Node.JS. It utilizes two Node mo
 
 The code (and associated assets) are hosted right here in this GitHub repository. Because there isn't any kind of browser interface for this project, it's not hosted live on the web anywhere like my projects usually are. However, I did film a walk-through video that shows the functionality of the application. You can view that video here:
 
-<a href="" target="blank"><b>ReadMe Generator Video Walk-Through</b></a>
+<a href="https://youtu.be/kozPoGiRJzU" target="blank"><b>ReadMe Generator Video Walk-Through</b></a>
 <br><br>
 
 ## Credits
