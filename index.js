@@ -56,4 +56,10 @@ inquirer
 	])
 	.then((response) => {
 		console.log(response);
+
+		fileName = `${title}-README.md`;
+
+		fs.writeFile(fileName, FILEHERE, (err) =>
+			err ? console.error(err) : console.log('README file generated!')
+		);
 	});
