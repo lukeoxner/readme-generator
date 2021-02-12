@@ -55,8 +55,6 @@ inquirer
 		},
 	])
 	.then((response) => {
-		console.log(response);
-
 		let icon;
 		let license;
 
