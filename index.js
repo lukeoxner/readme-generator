@@ -1012,7 +1012,7 @@ To run tests, use the following command: ${response.test}
 ## Questions
 
 Please reach out to me with any questions! <br>
-My GitHub username is @${response.github} <br>
+You can find my GitHub at <a href="http://${response.github}.github.com">${response.github}.github.com</a><br>
 My email address is ${response.email}
             
             `,
