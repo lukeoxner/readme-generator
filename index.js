@@ -979,6 +979,7 @@ ${icon}
 ## Description
 
 ${response.description}
+<br><br>
 
 ## Table of Contents
 
@@ -988,26 +989,32 @@ ${response.description}
 [Contributing](#Contributing)<br>
 [Tests](#Tests)<br>
 [Questions](#Questions)<br>
+<br>
 
 ## Installation
 
 To install the required modules, use the following command: ${response.install}
+<br><br>
 
 ## Usage
 
 ${response.usage}
+<br><br>
 
 ## License
 
 ${license}
+<br><br>
 
 ## Contributing
 
 ${response.contribution}
+<br><br>
 
 ## Tests
 
 To run tests, use the following command: ${response.test}
+<br><br>
 
 ## Questions
 
