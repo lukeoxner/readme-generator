@@ -6,7 +6,7 @@ const inquirer = require('inquirer');
 inquirer
 	.prompt([
 		{
-			type: 'input',
+			type: 'input', // Most of the questions we ask the user are 'input', allowing them to type in whatever they want
 			name: 'title',
 			message: 'What is the title of your project?',
 		},
@@ -21,7 +21,7 @@ inquirer
 			message: 'What is your email address?',
 		},
 		{
-			type: 'list',
+			type: 'list', // This time we give the user a list of 3 choices to pick from
 			name: 'license',
 			message: 'Which license does your project have?',
 			choices: ['MIT', 'Apache', 'GNU'],
@@ -35,7 +35,7 @@ inquirer
 			type: 'input',
 			name: 'install',
 			message: 'What command is needed to install dependencies?',
-			default: 'npm i',
+			default: 'npm i', // For this one, we provide the user a default value they can accept, or type their own
 		},
 		{
 			type: 'input',
@@ -55,9 +55,11 @@ inquirer
 		},
 	])
 	.then((response) => {
+		// Declaring block scoped variables icon and license
 		let icon;
 		let license;
 
+		// Using switch cases to fill in license icon and license text based on the user's selection
 		switch (response.license) {
 			case 'MIT':
 				icon = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
@@ -966,8 +968,10 @@ Public License instead of this License.  But first, please read
 				break;
 		}
 
-		fileName = `${response.title}-README.md`;
+		// Declaring variable fileName which uses the user's title to generate a file name for their ReadMe
+		let fileName = `${response.title}-README.md`;
 
+		// Using fs.writeFile to generate the ReadMe from our template and the user's input
 		fs.writeFile(
 			fileName,
 			`# ${response.title}
@@ -1022,6 +1026,7 @@ My email address is ${response.email}
             
             `,
 			(err) =>
+				// If there is an error, console log it. Otherwise, console log a success message
 				err ? console.error(err) : console.log('README file generated!')
 		);
 	});
